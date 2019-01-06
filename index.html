@@ -1,87 +1,149 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
 
 <head>
-  <meta charset="utf-8">
-  <title>Black's Personal Site</title>
+    <meta charset="utf-8" />
+    <title>Bruno Alves - Data Scientist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
 </head>
 
 <body>
-  <table cellspacing="20">
-    <tr>
-      <td> <img src="perfil.png" alt="Bruno Alves"></td>
-      <td>
-        <h1>Bruno Alves (Black)</h1>
-        <p><em>Product Engineer at <strong><a href="https://vizentec.com.br/">Vizentec</a></strong></em></p>
-        <p> Coordenador de Engenharia com 12 anos de experiência, atuando nas
-          áreas de máquinas industriais e soluções de gerenciamento de trânsito.</p>
-      </td>
-    </tr>
-  </table>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <a class="navbar-brand" href="#"><img src="data.png" width="30" height="30" class="d-inline-block align-top"
+                alt="">
+            Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <hr size="3">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Skills <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Demos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Simon Game</a>
+                        <a class="dropdown-item" href="#">The Notebook</a>
+                        <a class="dropdown-item" href="#">The Planner</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Suggestions</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact Me</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+                <button class="btn btn-outline-light btn-sm" type="submit">Hire Me</button>
+            </form>
+        </div>
+    </nav>
 
-  <h3>Main Accomplishments and Skills</h3>
-  <ul>
-    <li>First and most important.</li>
-    <li>Second but not less important.</li>
-    <a href="hobbies.html">
-      <h3>Hobbies and Stuff</h3>
-    </a>
-    <ol type="i">
-      <li>Games</li>
-      <li>Movies</li>
-      <li>Programming</li>
-    </ol>
-  </ul>
-  <hr>
-  <table cellspacing="5" >
-    <thead>
-      <tr>
-        <th>Period</th>
-        <th>Company</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>2012-2014</td>
-        <td>Honda</td>
-      </tr>
-      <tr>
-        <td>2014</td>
-        <td>Data Traffic</td>
-      </tr>
-    </tbody>
-  </table>
+    <!-- My Presentation -->
+    <section class="presentation p-3">
+        <div class="row text-center align-items-center">
+            <div class="col-lg-6 col-12">
+                <img class="img-present m-3 float-lg-right" src="perfil.png" alt="">
+            </div>
+            <div class="col-lg-6 col-12">
+                <h1 class="display-4 font-weight-normal">Hey there! I'm Bruno Alves,</h1>
+                <p class="lead font-weight-normal m-0">Mechatronic Engineer, <b>Data Scientist</b> and
+                    Fullstack Developer.</p>
+            </div>
+        </div>
+    </section>
 
-  <hr size="2">
+    <!-- What Can I do -->
+    <section class="skills">
+        <div class="row my-3">
+            <div class="col-3">
+                <h2 class="display-6 font-weight-normal">Experiências:</h2>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-6">
+                <img class="img-skills float-right" src="mems_deiagram.jpg" alt="">
+            </div>
+            <div class="col-6 col-lg-4">
+                <p class="lead font-weight-normal"><b>Engenheiro de Automação:</b> Desenvolvimento de Máquinas
+                    especiais
+                    para industria de fabricação e montagem de motocicletas.</p>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-2"></div>
+            <div class="col-6 col-lg-4">
+                <p class="lead font-weight-normal text-right"><b>Engenheiro de Produto:</b> Desenvolvimento e
+                    homologação
+                    de equipamentos de fiscalização de trânsito.</p>
+            </div>
+            <div class="col-6">
+                <img class="img-skills" src="product_management_conference-e1435138872870.png" alt="">
+            </div>
+        </div>
+    </section>
 
-  <h2>Specific Skills</h2>
+    <!-- Some Demos -->
+    <section class="demos">
+        <div class="row my-3">
+            <div class="col-3">
+                <h2 class="display-6 font-weight-normal">Projetos:</h2>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-lg-4 col-12">
+                <img class="img-demos" src="https://media.giphy.com/media/Zcm5DaspYzhTxstkF4/giphy.gif" alt="">
+                <p class="lead font-weight-normal"><b>The Simon Game:</b> Nostálgico e desafiador.</p>
+            </div>
+            <div class="col-lg-4 col-12">
+                <img class="img-demos" src="https://media.giphy.com/media/CbH03dCwjTUzK/giphy.gif" alt="">
+                <p class="lead font-weight-normal"><b>The Notebook:</b> Seu fichário digital.</p>
+            </div>
+            <div class="col-lg-4 col-12">
+                <img class="img-demos" src="https://media.giphy.com/media/Dps6uX4XPOKeA/giphy.gif" alt="">
+                <p class="lead font-weight-normal"><b>The Planner:</b> O último gerenciador de
+                    tarefas que você irá precisar.</p>
+            </div>
+        </div>
+    </section>
 
-  <table cellspacing="5" border="1">
-    <thead>
-      <tr>
-        <th>Skill</th>
-        <th>Rating</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Leadership</td>
-        <td>⭐⭐⭐⭐☆</td>
-      </tr>
-      <tr>
-        <td>Statistics</td>
-        <td>⭐⭐⭐☆☆</td>
-      </tr>
-    </tbody>
-  </table>
+    <!-- Contact me -->
+    <section class="contact">
+        <div class="row my-3">
+            <div class="col-12">
+                <h2 class="display-6 font-weight-bold">Contato:</h2>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-12">
+                <a href="mailto:brunoalves.ufu@gmail.com">
+                    <img class="img-contact" src="email.png" alt="">
+                    <h3 class="p-2"><b>E-mail me!</b></h3>
+                </a>
+            </div>
+        </div>
+    </section>
 
-  <hr size="2">
-  <a href="https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf">Download HTML Cheatsheet</a>
-  <br>
-  <a href="contact.html">My contacts</a>
-
+    <!-- Javascript Files -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
